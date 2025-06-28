@@ -1,0 +1,89 @@
+* {
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: 'Segoe UI', sans-serif;
+  transition: background 0.5s, color 0.5s;
+}
+
+body.dark-mode {
+  background: #111;
+  color: #fff;
+}
+
+body.light-mode {
+  background: #f0f0f0;
+  color: #000;
+}
+
+.hero {
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  text-align: center;
+  background: rgba(0, 0, 0, 0.4);
+}
+
+.hero h1 {
+  font-size: 3.5rem;
+}
+
+.hero p {
+  font-size: 1.2rem;
+}
+
+.section {
+  padding: 80px 0;
+}
+
+.card {
+  background-color: #2d2d44;
+  color: #fff;
+  transition: transform 0.3s;
+}
+
+.card:hover {
+  transform: scale(1.05);
+}
+
+footer {
+  background-color: #111;
+  padding: 20px 0;
+  text-align: center;
+}
+
+.theme-toggle button {
+  font-size: 0.9rem;
+}
+
+a.text-white:hover {
+  color: #ccc;
+}
+
+.profile-img {
+  object-fit: cover;
+  border: 3px solid #fff;
+  box-shadow: 0 0 15px rgba(255, 255, 255, 0.2);
+}
+
+.custom-alert {
+  padding: 12px 18px;
+  border-radius: 8px;
+  font-weight: 500;
+  margin-top: 10px;
+  text-align: center;
+  font-size: 1rem;
+}
+
+.custom-alert.success {
+  background-color: #198754;
+  color: white;
+}
+
+.custom-alert.error {
+  background-color: #dc3545;
+  color: white;
+}
